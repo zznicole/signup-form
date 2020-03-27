@@ -5,16 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup-form</title>
     <link rel="stylesheet" href="styles/index.css">
-    <script src="https://kit.fontawesome.com/8dd6362ff9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8dd6362ff9.js" crossorigin="anonymous" samsite="none secure"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Sign Up NOW!</h1>
-    <label for="name" class="label">Full Name</label>
-    <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name">
-    <label for="email" class="label">Email address</label>
-    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email">
-    <div class="select-container"></div>
-    
+<body class="screen">
+    <section class="form">
+        <h1 class="form__title">Sign Up NOW!</h1>
+        <label for="name" class="form__label">Full Name</label>
+        <input type="text" name="name" id="name" class="form__input-field form__input-field1" placeholder="Enter your name">
+        <label for="email" class="form__label">Email address</label>
+        <input type="email" name="email" id="email" class="form__input-field form__input-field2" placeholder="Enter your email">
+        <!--
+        <div class="form__select-container">
+            <label for="select" class="form__label">Your favorite Database(s)</label>
+            <select name="database" class="form__select" id="select">
+                <option value="dboo">DBOO</option>
+                <option value="mongodb">Mongodb</option>
+                <option value="oracle">Oracle</option>
+                <option value="postgresql">PostgreSQL</option>
+                <option value="couchdb">CouchDB</option>
+            </select>
+        </div>
+        
+        <label for="message" class="form__message">Your message</label>
+        <textarea name="message" cols="10" rows="4" class="form__input-field" placeholder="Write your message"></textarea>
+          
+        -->
+        <label for="password" class="form__label">Password</label>
+        <input type="password" name="password" id="password" class="form__input-field form__input-field3" placeholder="Enter your password">
+        <div class="form__checkboxcontainer">
+            <label class="checkbox__label">
+                <input type="checkbox" checked>
+                <span class="checkbox__title">I’d like to receive DBOO updates on my email.</span>
+            </label>
+        </div>
+        <button type="button" class="form__button" >Sign up</button>
+        <div class="form__policy">By click sign up button, you have agreed <a href="#privacy and security">our privacy and security agreement</a>.</div>
+    </section>
 </body>
 </html>
