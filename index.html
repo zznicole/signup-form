@@ -12,9 +12,9 @@
     <section class="form">
         <h1 class="form__title">Sign Up NOW!</h1>
         <label for="name" class="form__label">Full Name</label>
-        <input type="text" name="name" id="name" class="form__input-field form__input-field1" placeholder="Enter your name">
+        <input type="text" name="name" id="name" class="form__input-field form__input-field1" placeholder="Enter your name" required>
         <label for="email" class="form__label">Email address</label>
-        <input type="email" name="email" id="email" class="form__input-field form__input-field2" placeholder="Enter your email">
+        <input type="email" name="email" id="email" class="form__input-field form__input-field2" placeholder="Enter your email" required>
         <!--
         <div class="form__select-container">
             <label for="select" class="form__label">Your favorite Database(s)</label>
@@ -32,15 +32,15 @@
           
         -->
         <label for="password" class="form__label">Password</label>
-        <input type="password" name="password" id="password" class="form__input-field form__input-field3" placeholder="Enter your password">
+        <input type="password" name="password" id="password" class="form__input-field form__input-field3" placeholder="Enter your password" minlength="8" required>
         <div class="form__checkboxcontainer">
             <label class="checkbox__label">
                 <input type="checkbox" checked>
                 <span class="checkbox__title">I’d like to receive DBOO updates on my email.</span>
             </label>
         </div>
-        <button type="button" class="form__button" >Sign up</button>
-        <div class="form__policy">By click sign up button, you have agreed <a href="#privacy and security">our privacy and security agreement</a>.</div>
+        <button type="submit" class="form__button" >Submit</button>
+        <div class="form__policy">By clicking sign up button, you agree <a href="#privacy and security">our privacy terms</a></div>
     </section>
 </body>
 </html>
